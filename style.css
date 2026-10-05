@@ -132,6 +132,7 @@ hr {
 
 .hero_wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     min-height: 65vh;
@@ -261,6 +262,7 @@ hr {
 
 .about_wraper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     min-height: 65vh;
@@ -337,6 +339,7 @@ hr {
     /* display: grid;
         grid-template-columns: repeat(8, 1fr); */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;

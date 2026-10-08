@@ -10,18 +10,75 @@
 
 </head>
 <style>
-   #projects {
+    #project {
 
-    background-color: #111827cc;
+        background-color: #111827cc;
 
+    }
+
+    .project_wraper {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+
+    .project_main {
+
+        flex-direction: column;
+        display: flex;
+        /* gap: 20px; */
+        justify-content: center;
+        position: relative;
+    }
+
+    .project_card {
+
+        width: 259px;
+       
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 200px;
+        margin: 20px;
+        overflow: hidden;
+
+         background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    }
+
+    .project_img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        /* border-radius: 8px; */
+        display:block
+    }
+
+    .project_text {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    }
+    .project_detail {
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 3px 6px;
 }
-.projects_wraper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.project_detail p {
+    margin: 0;
 }
 
+    .project_text h2 {
+        /* text-align: center; */
+        margin-bottom: 10px;
+        /* font-size: 30px; */
+    }
+
+    
 </style>
 
 <body>
@@ -41,10 +98,10 @@
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">projetcs</a></li>
+                    <li><a href="#project">projetcs</a></li>
                     <li><a href="#certificate">git s</a></li>
                     <li><a href="">Contact</a></li>
-                    
+
                 </ul>
 
             </div>
@@ -77,7 +134,7 @@
                             and create value.</p>
                     </div>
                     <div class="hero_button">
-                        <a href="#" target=""><Button type="submit" class="b_projects">View My Project</Button></a>
+                        <a href="#" target=""><Button type="submit" class="b_project">View My Project</Button></a>
                         <a href="#" target=""><Button type="submit" class="contact">Contact Me</Button></a>
                     </div>
 
@@ -104,52 +161,55 @@
 
     <section class="about" id="about">
         <div class="container">
-            <div class="about_wraper">
+            <div class="about_main">
+                <div class="heading">
+                    <p class="topic_heading">About Me</p>
+                    <h2>Who Am I?</h2>
+                </div>
+                <div class="about_wraper">
 
-                <div class="about_left">
+                    <div class="about_left">
 
-                    <div class="heading">
-                        <p class="topic_heading">About Me</p>
-                        <h2>Who Am I?</h2>
+
+
+                        <p class="discription">
+                            I am a passionate developer who loves turning ideas into
+                            real-world applications. Currently pursuing BSCS at SMIU
+                            and enhancing my skills in AI & Data Science at SMIT.
+                            I enjoy building smart systems, solving problems and
+                            learning new technologies.
+                        </p>
+                        <din class="about_details">
+                            <div class="detail">
+                                <i><img src="./images/user.png" alt=""></i>
+                                <span>Name:</span>
+                                <strong>Ayan Peryani</strong>
+                            </div>
+                            <div class="detail">
+                                <i><img src="./images/email.png" alt=""></i>
+                                <span>Email:</span>
+                                <strong>ayanperyani7@gmail.com</strong>
+                            </div>
+                            <div class="detail">
+                                <i><img src="./images/location.png" alt=""></i>
+                                <span>Location:</span>
+                                <strong>Karachi Pakistan</strong>
+                            </div>
+                            <div class="detail">
+                                <i><img src="./images/open-book.png" alt=""></i>
+                                <span>Education:</span>
+                                <strong>Diploma in PHP Developer</strong>
+                            </div>
+                        </din>
+                        <div>
+                            <a href="#" target=""><Button type="submit" class="cv">Download CV</Button></a>
+                        </div>
+                    </div>
+                    <div class="about_right">
+                        <img class="about-img" src="./images/ChatGPT Image Aug 9, 2026, 10_44_51 PM.png" alt="">
                     </div>
 
-                    <p class="discription">
-                        I am a passionate developer who loves turning ideas into
-                        real-world applications. Currently pursuing BSCS at SMIU
-                        and enhancing my skills in AI & Data Science at SMIT.
-                        I enjoy building smart systems, solving problems and
-                        learning new technologies.
-                    </p>
-                    <din class="about_details">
-                        <div class="detail">
-                            <i><img src="./images/user.png" alt=""></i>
-                            <span>Name:</span>
-                            <strong>Ayan Peryani</strong>
-                        </div>
-                        <div class="detail">
-                            <i><img src="./images/email.png" alt=""></i>
-                            <span>Email:</span>
-                            <strong>ayanperyani7@gmail.com</strong>
-                        </div>
-                        <div class="detail">
-                            <i><img src="./images/location.png" alt=""></i>
-                            <span>Location:</span>
-                            <strong>Karachi Pakistan</strong>
-                        </div>
-                        <div class="detail">
-                            <i><img src="./images/open-book.png" alt=""></i>
-                            <span>Education:</span>
-                            <strong>Diploma in PHP Developer</strong>
-                        </div>
-                    </din>
-                    <div>
-                        <a href="#" target=""><Button type="submit" class="cv">Download CV</Button></a>
-                    </div>
                 </div>
-                <div class="about_right">
-                    <img class="about-img" src="./images/ChatGPT Image Aug 9, 2026, 10_44_51 PM.png" alt="">
-                </div>
-
             </div>
         </div>
     </section>
@@ -223,91 +283,97 @@
 
 
 
-<!-- //=======Projects Section===========// -->
+    <!-- //=======project Section===========// -->
 
-    <section class="projects" id="projects">
+    <section class="project" id="project">
         <div class="container">
-            <div class="products_main">
+            <div class="project_main">
 
                 <div class="heading">
-                    <p class="topic_heading">My Projects</p>
-                    <h2>Projects that i made</h2>
+                    <p class="topic_heading">My project</p>
+                    <h2>project that i made</h2>
                 </div>
 
-                <div class="projects_wraper">
+                <div class="project_wraper">
 
-                    <div class="projectst_card">
-                        <img  class="projects_img" alt="" src="./images/Sound1.PNG">
 
-                        <h2 class="projects_heading">
-                            Sound
+                    <div class="project_card">
+                        <img class="project_img" alt="" src="./images/smile1.PNG">
+                        <div class="project_text">
+                            <h2 class="project_heading">
+                                Smile
 
-                        </h2>
-                        <p class="projects_detail">
-                            Music Website like spotify using
-                            Back-End: PHP,MySQL
-                            Front-End: HTML,CSS,JavaScript,Bootstrap5
+                            </h2>
+                            <div class="project_detail">
+                                <p>PHP,SQL,Bootstrap5</p>
 
-                        </p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     
+                    <div class="project_card">
+                        <img class="project_img" alt="" src="./images/smile1.PNG">
+                        <div class="project_text">
+                            <h2 class="project_heading">
+                                Smile
 
-                    <div class="projectst_card">
-                        <img  class="projects_img" alt="" src="./images/Sound1.PNG">
+                            </h2>
+                            <div class="project_detail">
+                                <p>PHP,SQL,Bootstrap5</p>
 
-                        <h2 class="projects_heading">
-                            Sound
-
-                        </h2>
-                        <p class="projects_detail">
-                            Music Website like spotify using
-                            Back-End: PHP,MySQL
-                            Front-End: HTML,CSS,JavaScript,Bootstrap5
-
-                        </p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    
+                    <div class="project_card">
+                        <img class="project_img" alt="" src="./images/smile1.PNG">
+                        <div class="project_text">
+                            <h2 class="project_heading">
+                                Smile
 
-                    <div class="projectst_card">
-                        <img  class="projects_img" alt="" src="./images/Sound1.PNG">
+                            </h2>
+                            <div class="project_detail">
+                                <p>PHP,SQL,Bootstrap5</p>
 
-                        <h2 class="projects_heading">
-                            Sound
-
-                        </h2>
-                        <p class="projects_detail">
-                            Music Website like spotify using
-                            Back-End: PHP,MySQL
-                            Front-End: HTML,CSS,JavaScript,Bootstrap5
-
-                        </p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
+                     <div class="project_card">
+                        <img class="project_img" alt="" src="./images/smile1.PNG">
+                        <div class="project_text">
+                            <h2 class="project_heading">
+                                Smile
 
-                    
+                            </h2>
+                            <div class="project_detail">
+                                <p>PHP,SQL,Bootstrap5</p>
 
-                   <div class="projectst_card">
-                        <img  class="projects_img" alt="" src="./images/Sound1.PNG">
-
-                        <h2 class="projects_heading">
-                            Sound
-
-                        </h2>
-                        <p class="projects_detail">
-                            Music Website like spotify using
-                            Back-End: PHP,MySQL
-                            Front-End: HTML,CSS,JavaScript,Bootstrap5
-
-                        </p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- <div class="projectt_card">
+                        <img class="project_img" alt="" src="./images/Sound1.PNG">
+                        <div class="project_text">
+                            <h2 class="project_heading">
+                                Sound
 
-                    
+                            </h2>
+                            <div class="project_detail">
+                                <p>Music Website like spotify using</p>
+                                <p>Back-End: PHP,MySQL</p>
+                                <p> Front-End: HTML,CSS,JavaScript,Bootstrap5</p>
 
-                    
-
+                                </p>
+                            </div>
+                        </div>
+                    </div>  -->
 
                 </div>
                 <div class="view_all">
@@ -321,10 +387,10 @@
 
 
 
-<!-- //=======Certificate Section===========// -->
+    <!-- //=======Certificate Section===========// -->
 
 
- <section class="certificate" id="certificate">
+    <!-- <section class="certificate" id="certificate">
         <div class="container">
             <div class="skills_main">
 
@@ -384,7 +450,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 

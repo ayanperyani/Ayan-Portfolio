@@ -172,7 +172,7 @@ hr {
 
 }
 
-.b_projects {
+.b_project {
     background: #8B5CF6;
     color: white;
     font-size: 16px;
@@ -195,7 +195,7 @@ hr {
     cursor: pointer;
 }
 
-.b_projects:hover,
+.b_project:hover,
 .contact:hover {
     box-shadow: 0px 0px 10px #8B5CF6;
     letter-spacing: 2px;
@@ -397,4 +397,143 @@ hr {
     .view:hover {
         box-shadow: 0px 0px 10px #8B5CF6;
         letter-spacing: 2px;
+    }
+
+/* //====================Project_Section======================// */
+
+
+        #project {
+
+        background-color: #111827cc;
+
+    }
+
+    .project_wraper {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+
+    .project_main {
+
+        flex-direction: column;
+        display: flex;
+        /* gap: 20px; */
+        justify-content: center;
+        position: relative;
+    }
+
+    .project_card {
+
+        width: 259px;
+       
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 200px;
+        margin: 20px;
+        overflow: hidden;
+
+         background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    }
+
+    .project_img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        /* border-radius: 8px; */
+        display:block
+    }
+
+    .project_text {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    }
+    .project_detail {
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 3px 6px;
+    }
+
+.project_detail p {
+    margin: 0;
+}
+
+    .project_text h2 {
+        /* text-align: center; */
+        margin-bottom: 10px;
+        /* font-size: 30px; */
+    }
+
+
+/* //====================Certificate_Section======================// */
+
+
+
+      .certificate_wraper {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+
+    .certificate_main {
+
+        flex-direction: column;
+        display: flex;
+        /* gap: 20px; */
+        justify-content: center;
+        position: relative;
+    }
+
+    .certificate_card {
+
+        width: 259px;
+
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 200px;
+        margin: 20px;
+        overflow: hidden;
+
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .certificate_img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        /* border-radius: 8px; */
+        display: block
+    }
+
+    .certificate_text {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+    }
+
+    .certificate_detail {
+        font-size: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 4px;
+        padding: 3px 6px;
+    }
+
+    .certificate_detail p {
+        margin: 0;
+    }
+
+    .certificate_text h2 {
+        /* text-align: center; */
+        margin-bottom: 10px;
+        /* font-size: 30px; */
     }
